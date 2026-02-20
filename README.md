@@ -1,60 +1,60 @@
-# PDF-RAG-Projects
-# 📄 Basic PDF RAG Bot
+# 🚀 PDF RAG Projects
 
-This is my first mini project while learning **Generative AI + RAG concepts**.
+This repository contains **two mini projects** I built while learning **Retrieval-Augmented Generation (RAG)** and LLM-based application development.
 
-The idea behind this project was simple:
-
-👉 Upload a PDF  
-👉 Ask questions  
-👉 Get answers only from that PDF  
-
-So instead of manually reading a document, this bot reads and understands it for you.
+Instead of separate works, they represent my learning progression from a simple idea → extended AI system.
 
 ---
 
-## 💡 What this project does
+## 📄 Basic PDF RAG Bot
 
-- Accepts a PDF file from the user
-- Extracts text page by page using `pdfplumber`
-- Breaks the text into smaller chunks (chunking)
-- Converts chunks into embeddings using EURI API
-- Stores embeddings inside FAISS vector database
-- When a question is asked:
-  - Question is embedded
-  - Similar chunks are retrieved
-  - Context + question are sent to LLM
-- Maintains conversation memory so follow-up questions work
+My first project focused on answering questions from a **single PDF**.
 
-Basically → **PDF + RAG + Memory = Smart document assistant**
+### 💡 What it does
 
----
+* Upload a PDF
+* Extract text and split into chunks
+* Generate embeddings and store in FAISS
+* Retrieve relevant context for questions
+* Send context + question to LLM
+* Maintain basic conversation memory
 
-## 🧠 Concepts I learned here
-
-- Retrieval Augmented Generation (RAG)
-- Chunking strategy (overlap for context continuity)
-- Vector database basics (FAISS)
-- Embedding generation
-- Context injection into LLM prompts
-- Conversation memory handling
-- Streamlit UI basics
+👉 A simple **chat-with-your-PDF assistant**
 
 ---
 
-## ⚙️ Tech stack
+## 🧠 Multi-Document Search Engine
 
-- Streamlit → UI
-- pdfplumber → PDF text extraction
-- FAISS → vector storage
-- NumPy → vector operations
-- Requests → API calls
-- EURI → embeddings + LLM
+This is an extension of the basic version that supports **multiple PDFs**.
+
+### 💡 Added capabilities
+
+* Multi-document ingestion
+* Semantic search across all files
+* Vector similarity visualization
+* Conversation memory display
+* Improved retrieval flow
+
+👉 Behaves like a **mini AI knowledge search engine**
 
 ---
 
-## ▶️ How to run
+## ⚙️ Tech Stack
+
+Streamlit • pdfplumber • FAISS • NumPy • Requests • EURI API • scikit-learn • matplotlib
+
+---
+
+## ▶️ Run
 
 ```bash
 pip install -r requirements.txt
 python -m streamlit run basic_rag.py
+# or
+python -m streamlit run multi_document.py
+```
+
+---
+
+⭐ These projects helped me understand how document-based AI assistants are built using **RAG, vector databases, and LLMs**.
+
