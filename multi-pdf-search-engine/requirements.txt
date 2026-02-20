@@ -1,0 +1,7 @@
+streamlit
+pdfplumber
+numpy
+faiss-cpu
+requests
+scikit-learn
+matplotlib
